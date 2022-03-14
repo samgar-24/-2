@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	one 
+	two 
+	three
+</body>
+<script >
+	
+    function splitString(stringToSplit, separator) {
+		
+        document.body.innerHTML='';
+  		let arrayOfStrings = stringToSplit.split(separator);
+
+    	for (let i = 0; i < arrayOfStrings.length; i++) {
+  			document.body.innerHTML += "<p>"+ arrayOfStrings[i] + "</p>";
+  		}
+  	}
+
+  	splitString(document.body.innerText,' ');
+      
+</script>
+</html>
